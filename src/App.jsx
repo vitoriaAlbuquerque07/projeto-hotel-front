@@ -1,8 +1,13 @@
+import { QueryClientProvider } from "@tanstack/react-query";
 import { LuHouse } from "react-icons/lu";
+import { QUERYCLIENT } from "./services";
 
 const APP = () => {
   return (
-    <><LuHouse></LuHouse></>
+    <QueryClientProvider client={QUERYCLIENT}>
+
+      <><LuHouse></LuHouse></>
+    </QueryClientProvider>
   );
 }
 
