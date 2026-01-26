@@ -1,6 +1,8 @@
+import { LuHouse } from "react-icons/lu";
+
 const APP = () => {
   return (
-    <>APP</>
+    <><LuHouse></LuHouse></>
   );
 }
 
