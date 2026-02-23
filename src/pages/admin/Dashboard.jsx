@@ -20,6 +20,21 @@ const Dashboard = () => {
     return (
         <main className="p-8 bg-[#fcfaf8] flex flex-col gap-6">
 
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {dadosReview.map((item) => (
+                    <CardReview
+                        key={item.id}
+                        titulo={item.titulo}
+                        valor={item.valor}
+                        descricao={item.descricao}
+                        estatisticas={item.estatisticas}
+                        valorTendencia={item.valorTendencia}
+                        icone={item.icone}
+                        cor={item.cor}
+                    />
+                ))}
+            </div>
+
             {/* CARD 1: Status dos Quartos */}
             <Card
                 titulo="Status dos Quartos"
