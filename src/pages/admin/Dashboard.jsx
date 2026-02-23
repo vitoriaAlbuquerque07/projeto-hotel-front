@@ -1,6 +1,9 @@
 import Card from "../../components/Card";
 import { FaCircle } from "react-icons/fa";
 import CardRoom from "../../components/CardRoom";
+import { LuBed } from "react-icons/lu";
+import { FiCalendar, FiDollarSign, FiTrendingUp } from "react-icons/fi";
+import CardReview from "../../components/CardReview";
 
 const Dashboard = () => {
 
@@ -15,6 +18,47 @@ const Dashboard = () => {
         { id: 8,  name: "Quarto Standard 202",  guests: 1, status: "RESERVADO"  },
         { id: 9,  name: "Suite Master 203",     guests: 2, status: "VAGO"       },
         { id: 10, name: "Suite Presidencial",   guests: 4, status: "VAGO"       },
+    ];
+
+    const dadosReview = [
+        {
+            id: 1,
+            titulo: "Taxa de Ocupação",
+            valor: "20%",
+            descricao: "2 de 10 quartos",
+            estatisticas: "↘ -5% vs. mês anterior", 
+            valorTendencia: -5, 
+            icone: <FiTrendingUp size={24} />,
+            cor: "bg-[#0f4f6e]"
+        },
+        {
+            id: 2,
+            titulo: "Receita do Mês",
+            valor: "R$ 3.400",
+            descricao: "Receita confirmada",
+            estatisticas: "↗ 8% em comparação com o mês anterior",
+            valorTendencia: 8, 
+            icone: <FiDollarSign size={24} />,
+            cor: "bg-white"
+        },
+        {
+            id: 3,
+            titulo: "Reservas Ativas",
+            valor: "5",
+            descricao: "R$ 5.500 pendente",
+            estatisticas: "",
+            icone: <FiCalendar size={24} />,
+            cor: "bg-white"
+        },
+        {
+            id: 4,
+            titulo: "Quartos Disponíveis",
+            valor: "5",
+            descricao: "Prontos para reserva",
+            estatisticas: "",
+            icone: <LuBed size={24} />,
+            cor: "bg-[#21a568]"
+        }
     ];
 
     return (
