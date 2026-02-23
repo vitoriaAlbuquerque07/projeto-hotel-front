@@ -1,5 +1,6 @@
 import Card from "../../components/Card";
 import { FaCircle } from "react-icons/fa";
+import DailyResume from "../../components/DailyResume";
 import ChartRoom from "../../components/ChartRoom";
 import CardRoom from "../../components/CardRoom";
 import { LuBed } from "react-icons/lu";
@@ -79,7 +80,6 @@ const Dashboard = () => {
                 ))}
             </div>
 
-            {/* CARD 1: Status dos Quartos */}
             <Card
                 titulo="Status dos Quartos"
                 info={
@@ -114,7 +114,8 @@ const Dashboard = () => {
                         <h1>Lista de reservas vai aqui...</h1>
                     </Card>
                 </div>
-                <div className="w-75">
+                <div className="flex flex-col gap-5 w-75">
+                    <DailyResume checkIns={8} checkOuts={4} />
                     <ChartRoom />
                 </div>
             </div>
