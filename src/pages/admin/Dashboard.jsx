@@ -1,4 +1,7 @@
 import Card from "../../components/Card";
+import { FaCircle, FaRegUser } from "react-icons/fa";
+import CardReservas from "../../components/CardReservas";
+import { MdOutlineBed } from "react-icons/md";
 import { FaCircle } from "react-icons/fa";
 import DailyResume from "../../components/DailyResume";
 import ChartRoom from "../../components/ChartRoom";
