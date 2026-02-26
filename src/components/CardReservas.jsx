@@ -37,7 +37,7 @@ const CardReservas = ({foto,nome,status,quarto,dados,valor,forma }) => {
   </div>
 
 </div>
-<div className="relative  top-1 left-6" >
+<div className="relative top-1 ml-auto  " >
 <div className="font-bold flex justify-end  ">{valor}</div>
 <div className="text-neutral-500 flex justify-end  font-light ">{forma}</div>
 </div>
